@@ -179,7 +179,7 @@ export class WeatherRadarCard extends LitElement implements LovelaceCard {
                 case "RainViewer-TWC":
                   var tileURL = 'https://tilecache.rainviewer.com/v2/radar/{time}/256/{z}/{x}/{y}/4/1_0.png';
                   document.getElementById("img-color-bar").src = "/local/community/weather-radar-card/radar-colour-bar-twc.png";
-                  var framePeriod = 1000000;
+                  var framePeriod = 300000;
                   var frameLag = 60000;
                   break;
                 case "RainViewer-Meteored":
